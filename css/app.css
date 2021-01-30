@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+#header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header h1 {
+  color: white;
+  text-align: center;
+}
+@media (max-width: 599px) {
+  #header h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  #header h1 {
+    font-size: 3rem;
+  }
+}
+
+.container-main {
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  border-radius: 32px;
+  background-color: #FFFFFF;
+}
+.container-main #formulario {
+  width: 100%;
+}
+.container-main #formulario #form-text {
+  height: 2rem;
+  border: none;
+  padding: 0rem 1.5rem;
+  border-radius: 32px;
+  font-size: 1.5rem;
+  color: #959595;
+  background: #ffffff;
+  box-shadow: 0px 16px 70px -27px #9105ff;
+}
+.container-main #formulario #form-text::placeholder {
+  color: #959595;
+}
+@media (max-width: 599px) {
+  .container-main #formulario #form-text {
+    width: 100%;
+    height: 6rem;
+  }
+}
+@media (min-width: 600px) {
+  .container-main #formulario #form-text {
+    width: 100%;
+    height: 7rem;
+    font-size: 1.9rem;
+  }
+}
+.container-main #formulario #button-add {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+  border-radius: 32px;
+  background: #9105FF;
+  box-shadow: 0px 16px 45px -16px #9105ff;
+}
+.container-main #formulario #button-add .plus-circle {
+  font-size: 2rem;
+}
+.container-main #formulario #button-add span {
+  margin-left: 1rem;
+}
+@media (max-width: 599px) {
+  .container-main #formulario #button-add {
+    font-size: 1.5rem;
+    padding: 2rem 2.5rem;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .container-main #formulario #button-add {
+    font-size: 1.9rem;
+    padding: 2.5rem 3rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main #formulario #button-add {
+    padding: 2rem 3rem;
+    transition: all 0.2s ease;
+    transform: scale(1);
+  }
+  .container-main #formulario #button-add:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+  }
+}
+@media (max-width: 599px) {
+  .container-main #formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 600px) {
+  .container-main #formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 900px) {
+  .container-main #formulario {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5rem;
+  }
+}
+.container-main .container-tasks {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  margin-top: 4rem;
+}
+.container-main .container-tasks::-webkit-scrollbar {
+  width: 0px;
+}
+.container-main .container-tasks::-webkit-scrollbar-track {
+  appearance: none;
+  background: none;
+}
+.container-main .container-tasks::-webkit-scrollbar-thumb {
+  appearance: none;
+  background: none;
+}
+.container-main .container-tasks .tasks {
+  width: 100%;
+  margin: auto;
+  height: 7rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 16px 30px rgba(154, 170, 207, 0.27);
+  border-radius: 16px;
+}
+.container-main .container-tasks .tasks .column-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container-main .container-tasks .tasks .column-one .check-box {
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  background-color: #ff6c6c;
+}
+@media (min-width: 600px) {
+  .container-main .container-tasks .tasks .column-one .check-box {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+.container-main .container-tasks .tasks .column-one .task-icon {
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  .container-main .container-tasks .tasks .column-one .task-icon {
+    font-size: 2.2rem;
+  }
+}
+.container-main .container-tasks .tasks .column-one .default {
+  color: #ff6c6c;
+}
+.container-main .container-tasks .tasks .column-one .task-icon.completed {
+  color: #42ff00;
+}
+.container-main .container-tasks .tasks .column-one .title-project {
+  color: #1A1A1A;
+  margin-left: 1rem;
+}
+@media (max-width: 599px) {
+  .container-main .container-tasks .tasks .column-one .title-project {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 600px) {
+  .container-main .container-tasks .tasks .column-one .title-project {
+    font-size: 1.9rem;
+  }
+}
+.container-main .container-tasks .tasks .button-trash {
+  border: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+.container-main .container-tasks .tasks .button-trash .trash {
+  color: #FF6C6C;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  .container-main .container-tasks .tasks .button-trash .trash {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  .container-main .container-tasks .tasks {
+    height: 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main .container-tasks .tasks {
+    width: 90%;
+    margin: auto;
+    height: 9rem;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .container-main .container-tasks {
+    width: 90%;
+    margin: auto;
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main .container-tasks {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    margin-top: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .container-main {
+    border-radius: 0px;
+    background-color: transparent;
+  }
+}
+@media (min-width: 900px) {
+  .container-main {
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-main {
+    width: 70%;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 1800px) {
+  .container-main {
+    width: 60%;
+    padding-top: 2rem;
+  }
+}
+
+#form-text.animation {
+  animation: effect 0.3s;
+}
+
+@keyframes effect {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-4px) rotate(-4deg);
+  }
+  40% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(4deg);
+  }
+  80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+.complete {
+  background-color: #42ff00 !important;
+}
+
+.active {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=app.css.map */
